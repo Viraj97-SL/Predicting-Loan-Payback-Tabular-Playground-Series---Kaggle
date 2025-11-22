@@ -13,8 +13,6 @@ The primary objective was to predict the probability ($\text{P}(\text{loan\_paid
 
   * **Metric:** **Area Under the ROC Curve (ROC AUC)**.
 
------
-
 ## 🚀 Learning Journey and Technical Progression
 
 This project was structured as a comprehensive learning exercise, progressing through three major stages of machine learning complexity:
@@ -38,11 +36,16 @@ The final, high-scoring model uses a weighted ensemble of two robust Boosting al
 
 ### 2\. Feature Engineering
 
-  * **Goal:** Create features that highlight financial risk, overcoming the simplicity of the synthetic data's original columns.
-  * **Key Engineered Features (As shown in your provided image):**
-      * **Financial Ratios:** `Income_to_Loan_Ratio` ($$\frac{\text{annual\_income}}{\text{loan\_amount}}$$ )
-      * **Debt Metrics:** `Annual_Debt_Amount` ($\text{debt\_to\_income\_ratio} \times \text{annual\_income}$)
-      * **Payment Indicators:** `Payment_Burden` ($$\frac{\text{installment}}{\text{monthly\_income}}$$ ) (Utilizing the new columns from the enriched data).
+
+Goal: Create features that highlight financial risk, overcoming the simplicity of the synthetic data's original columns.
+
+Key Engineered Features:
+
+Financial Ratios: Income_to_Loan_Ratio (annual_income / loan_amount)
+
+Debt Metrics: Annual_Debt_Amount (debt_to_income_ratio * annual_income)
+
+Payment Indicators: Payment_Burden (installment / monthly_income) (Utilizing the new columns from the enriched data).
 
 ### 3\. Final Ensemble
 
